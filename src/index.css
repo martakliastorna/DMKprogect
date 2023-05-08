@@ -1,0 +1,480 @@
+@font-face {
+  font-family: RobotoSlab-ExtraLight;
+  src: url("../fonts/RobotoSlab-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: RobotoSlab-Regular;
+  src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+
+html, body, #root{
+  font-size: 18px;
+  line-height: 22px;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  font-family: RobotoSlab-ExtraLight;
+  background-color: #B5B2AD;
+}
+.hide {
+  display:none
+}
+.white {
+  background: white;
+}
+
+.container {
+  background-color: white;
+  max-width: 1200px;
+}
+
+.style-foot {
+  font-size: 15px;
+}
+
+.logotype {
+  height: 3rem;
+  width: 3rem;
+  max-width: 100%;
+}
+
+.position-z {
+  position: relative;
+  z-index: 2;
+}
+
+.header-burger {
+  display: none;
+}
+
+.header-body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: rem(80);
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.font-bold {
+  font-family: RobotoSlab-Regular;
+}
+
+.font-size {
+  font-size: 1.2rem;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-black:hover {
+  color: black;
+}
+
+.title {
+  font-size: 2.4rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.img-shop {
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: 100%;
+}
+
+.content-about {
+  background: #F8F8F8;
+  padding: 0;
+}
+
+.shop-cart {
+  position: absolute;
+  padding:2rem;
+  background-color: rgba(255, 255, 255);
+  min-height: 100px;
+  width: 30rem;
+  z-index: 2;
+  top: 20%;
+  right: 0%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease 0.1s;
+}
+.registration-active {
+  background-color: rgba(255, 255, 255, 0.714);
+  height: 5.5rem;
+  width: 10rem;
+  z-index: 2;
+  position: absolute;
+  top: -1000%;
+  right: -23%;
+  text-align: right;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.registration-active.active-registration {
+  top: 150%;
+  right: -23%;
+  transition: all 0.5s ease 0s;
+}
+
+.registration-active button {
+  margin-bottom: .5rem;
+}
+
+.registration-form {
+  margin: 0 auto;
+  background-color: #B5B2AD;
+}
+
+.form-width {
+  width: 20rem;
+  height: 2.6rem;
+}
+
+.title-blog {
+  font-family: RobotoSlab-Regular;
+  font-size: 1.8rem;
+  padding-top: 5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.underline {
+  width: 7.2rem;
+  height: .4rem;
+  background-color: #E4A162;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+
+.plasing {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+}
+
+.blog {
+  width: 16rem;
+  height: 18rem;
+  cursor: pointer;
+  max-width: 100%;
+  display: block;
+}
+
+.shop {
+  width: 16rem;
+  height: 20rem;
+  max-width: 100%;
+  display: block;
+}
+
+.position {
+  position: relative;
+}
+
+.mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: RobotoSlab-Regular;
+  font-size: 1.8rem;
+  background-color: rgba(217, 217, 217, 0.5);
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+.active-el:hover {
+  cursor: pointer;
+  transition: .4s;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.social-icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  background-image: url("../public/images/social-icon.jpg");
+  cursor: pointer;
+  border-radius: 1rem;
+  float: left;
+  margin-left: 1rem;
+}
+
+.social-icon-facebook {
+  background-position: 627px 370px;
+}
+
+.social-icon-facebook:hover {
+  background-position: 852px 370px;
+}
+
+.social-icon-tiktok {
+  background-position: 571px 262px;
+}
+
+.social-icon-tiktok:hover {
+  background-position: 795px 262px;
+}
+
+.social-icon-instagram {
+  background-position: 572px 370px;
+}
+
+.social-icon-instagram:hover {
+  background-position: 796px 370px;
+}
+
+.social-icon-whatsapp {
+  background-position: 682px 262px;
+}
+
+.social-icon-whatsapp:hover {
+  background-position: 907px 262px;
+}
+
+.social-icon-telephone {
+  background-position: 627px 150px;
+}
+
+.social-icon-gmail {
+  background-position: 683px 370px;
+}
+ul li {
+  padding-bottom: .3rem;
+  list-style-type: "\2013";
+  padding-inline-start: .5rem;
+}
+
+ol li {
+  padding-bottom: .3rem;
+}
+
+#go-top {
+  position: fixed;
+  top: calc(80%);
+  right: 0;
+  background: #F8F8F8;
+  font-size: .8rem;
+  color: black;
+  padding: .4rem 1rem;
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+  z-index: 3;
+}
+
+.call-info {
+  padding: 4rem;
+}
+
+.callback {
+  background-color: #F8F8F8;
+  padding: 4rem;
+}
+
+.comeback {
+  position: fixed;
+  padding-top: 1.5rem;
+  right: 4rem;
+}
+
+.come-back {
+  position: fixed;
+  padding-top: 1.5rem;
+  left: 4rem;
+}
+.shop-products {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-burger:before,
+  .header-burger:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-burger:before {
+    top: 0;
+  }
+
+  .header-burger:after {
+    bottom: 0;
+  }
+
+  .header-burger.active-burger:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header-burger.active-burger:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header-burger.active-burger span {
+    transform: scale(0);
+  }
+
+  .header-burger span {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-body {
+    position: relative;
+    height: 50px;
+  }
+
+  .header-menu {
+    font-size: 1.5rem;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 70px 20px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .header-menu.active-burger {
+    top: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  .header-menu a {
+    padding-bottom: .5rem;
+  }
+
+  .registration-active {
+    top: -1000%;
+    right: -100%;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+  }
+
+  .registration-active.active-registration {
+    top: 150%;
+    right: -100%;
+  }
+#root, html, body {
+  background-color: white;
+}
+  .container {
+    width: 90%;
+  }
+
+  .show-hide {
+    display: none;
+    font-family: RobotoSlab-ExtraLight;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 1rem;
+  }
+
+  .title-img {
+    width: 50%;
+  }
+
+  .plasing {
+    display: inline-block;
+  }
+
+  .place-block {
+    display: block;
+  }
+
+  .blog {
+    padding-top: 2rem;
+  }
+
+  .shop {
+    padding-top: 2rem;
+  }
+
+  .social-icon-facebook {
+    background-position: 625px 369px;
+  }
+
+  .social-icon-facebook:hover {
+    background-position: 848px 369px;
+  }
+
+  .social-icon-tiktok {
+    background-position: 567px 259px;
+  }
+
+  .social-icon-tiktok:hover {
+    background-position: 791px 259px;
+  }
+
+  .social-icon-instagram {
+    background-position: 567px 368px;
+  }
+
+  .social-icon-instagram:hover {
+    background-position: 792px 367px;
+  }
+
+  .social-icon-whatsapp {
+    background-position: 678px 259px;
+  }
+
+  .social-icon-whatsapp:hover {
+    background-position: 903px 259px;
+  }
+
+  .video {
+    width: 300px;
+    height: 250px;
+  }
+
+  .call-info {
+    text-align: center;
+  }
+
+}
